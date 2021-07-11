@@ -12,8 +12,10 @@ body {
   /* Parent Div */
   height: 100vh;
   display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: 50px 1fr 50px 75px;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-rows: 300px 300px;
+  grid-auto-rows: 300px;
+  grid-gap: 2px;
 }
 
 /* flex */
@@ -24,6 +26,7 @@ body {
   justify-content: center;
   align-items: center;
   font-size: 2em;
+
   color: #ffeead;
 }
 
@@ -41,10 +44,6 @@ body {
 
 .container div:nth-child(4n) {
   background-color: #ffd166;
-}
-
-.container div:nth-child(5n) {
-  background-color: red;
 }
 
 /* Grid Sizing */
